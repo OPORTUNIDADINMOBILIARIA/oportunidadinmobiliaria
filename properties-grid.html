@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en-US">
+
+	<head>
+
+		<title>OPORTUNIDAD - INMOBILIARIA - BUSCADOR </title>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+
+		<script src="js/pace.js"></script>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+		<link rel="stylesheet" href="css/jquery.selectBox.css" type="text/css">
+		<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="css/green.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/responsive.css" type="text/css">
+		<link rel="stylesheet" href="css/pace-minimal.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,500' rel='stylesheet' type='text/css'>
+
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<!-- TOP -->
+		<div class="top-bar">
+
+			<p class="text">
+				<a><i class="fa fa-map-marker"></i> O'HIGGIN 2456, LOS ANGELES</a>
+                <a href="tel:+56397396058"><i class="fa fa-phone"></i> + 56 937 39 60 58</a>
+			</p>
+
+			<p class="social">
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-vimeo"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-skype"></i></a>
+			</p>
+
+		</div>
+		<!-- TOP -->
+
+		<!-- HEADER -->
+		<header class="clearfix">
+
+			<div class="logo">
+				<a href="#"><!img src="images/logo.png" alt="OP"></a>
+			</div>
+
+			<nav class="navbar collapse" id="mobile-menu">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+
+					<li class="dropdown active">
+						<a class="dropdown-toggle" data-toggle="dropdown">PROPIEDADES</a>
+						<ul class="dropdown-menu">
+							<li><a href="properties-grid.html">¡BUSCA TU OPORTUNIDAD!</a></li>
+							<!li><!a href="properties-list.html"><!/a><!/li>
+							<!li><!a href="properties-map.html"><!/a><!/li>
+							<!li><!a href="properties-single.html"><!/a><!/li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
+						<ul class="dropdown-menu">
+							<li><a href="services.html">TODO LO QUE NECESITAS</a></li>
+							<!li><!a href="services-single.html"><!/a><!/li>
+							<!li><!a href="services-single.html"><!/a><!/li>
+							<!li><!a href="services-single.html"><!/a><!/li>
+							<!li><!a href="services-single.html"><!/a><!/li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown">ASESORES</a>
+						<ul class="dropdown-menu">
+							<li><a href="team.html">¡PROFESIONALES QUE TE AYUDADRAN!</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown">NOSOTROS</a>
+						<ul class="dropdown-menu">
+							<!li><!a href="blog.html"><!/a><!/li>
+							<li><a href="blog-post.html">MISION Y VISION</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">CONTACTANOS</a></li>
+				</ul>
+			</nav>
+
+			<div class="user">
+				<!a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<!img src="images/avatar1.png" alt="User Photo">
+					<!span class="drop-arow"><!/span>
+				<!/a>
+				<ul class="dropdown-menu user-drop">
+					<li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
+					<li><a href="#"><i class="fa fa-list"></i>My Properties</a></li>
+					<li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+				</ul>
+			</div>
+
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+		</header>
+		<!-- HEADER -->
+
+		<div class="full-width page-wrap properties-page">
+
+			<!-- BREADCRUMBS-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="breadcrumbs">
+							<a href="index.html">BUSCADOR</a>
+							<span class="sep">/</span>
+							<span class="current">CUADRO DE PROPIEDADES</span>
+						</div>
+						<h2 class="page-title">OPORTUNIDADES INMOBILIARIAS PARA SU PROYECTO</h2>
+					</div>
+				</div>
+			</div>
+			<!-- BREADCRUMBS -->
+
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 col-sm-6">
+						<div class="property-filter">
+							<a href="#" class="active">TODO</a>
+							<a href="#">RENTA</a>
+							<a href="#">VENTA</a>
+							<a href="#">COMPRA</a>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<div class="property-views">
+							<a href="properties-grid.html" class="active"><i class="fa fa-th-large"></i>CUADRO</a>
+							<a href="properties-list.html"><i class="fa fa-bars"></i>LISTA</a>
+							<a href="properties-map.html"><i class="fa fa-map"></i>MAPA</a>
+						</div>
+					</div>
+
+					<!-- SIDEBAR -->
+					<aside class="col-md-4">
+
+						<div class="property-search">
+							<form action="#" method="get">
+
+								<select>
+									<option>LOCALIZACION</option>
+                    <option>ARICA Y PARINACOTA</option>
+                    <option>TARAPACÁ</option>
+                    <option>ANTOFAGASTA</option>
+					<option>ATACAMÁ</option>
+                    <option>COQUIMBO</option>
+                    <option>VALPARAÍSO</option>
+                    <option>METROPOLITANA</option>
+					<option>O'HIGGINS</option>
+                    <option>MAULE</option>
+                    <option>ÑUBLE</option>
+                    <option>BÍO-BÍO</option>
+					<option>ARAUCANÍA</option>
+                    <option>RÍOS</option>
+                    <option>LAGOS</option>
+					<option>AYSÉN</option>
+                    <option>MAGALLANES</option>
+								</select>
+								<select>
+									<option>Categoria</option>
+                                    <option>TERRENOS</option>
+                                    <option>PARCELAS</option>
+					                <option>FUNDOS</option>
+                                    <option>CASAS</option>
+					                <option>APARTAMENTOS</option>
+                                    <option>LOCALES</option>
+                                    <option>COMERCIOS</option>
+								</select>
+								<select>
+									<option>TIPO</option>
+                                    <option>COMPRA</option>
+                                    <option>VENTA</option>
+                                    <option>RENTA</option>
+								</select>
+
+								<hr>
+
+								<select>
+									<option>QUINTA</option>
+									<option>CASA</option>
+									<option>APARTAMENTO</option>
+									<option>TIENDA</option>
+								</select>
+								<select class="half first">
+									<option>HABITACIONES</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+								<select class="half">
+									<option>BAÑOS</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+
+								<hr>
+
+								<div class="check-box">
+									<label><input type="checkbox" class="checkbox">COCHERA</label>
+									<label><input type="checkbox" class="checkbox" checked>RECREACION</label>
+									<label><input type="checkbox" class="checkbox">PISCINA</label>
+								</div>
+
+								<div class="range">
+									<p>
+										<label for="area" class="p-1">AREA</label>
+										<span>M2 <input type="text" id="area" /></span>
+									</p>
+									<div id="area-range"></div>
+								</div>
+								<div class="range">
+									<p>
+										<label for="price" class="p-2">PRECIO</label>
+										<span>$ <input type="text" id="price" ></span>
+									</p>
+									<div id="price-range"></div>
+								</div>
+
+								<div class="buttons">
+									<button class="btn btn-danger"><i class="fa fa-search"></i>BUSCAR</button>
+									<button class="btn btn-clear">LIMPIAR</button>
+								</div>
+
+							</form>
+						</div>
+
+					</aside>
+					<!-- SIDEBAR -->
+
+					<div class="col-md-8">
+
+						<div class="row properties-grid">
+
+							<div class="col-md-6 col-sm-6">
+								<div class="item">
+									<div class="item-header clearfix">
+										<h3><a href="#">CASA EN LOS ANGELES</a></h3>
+										<span class="favorite"><i class="fa fa-heart"></i>9</span>
+									</div>
+									<figure>
+										<img src="images/items/1.png" alt="" class="img-responsive">
+										<span class="label sale">VENTA</span>
+										<div class="overlay">
+											<a href="#" class="btn btn-detail">DETALLES</a>
+										</div>
+									</figure>
+									<div class="item-detail">
+										<div class="left">
+											<span class="place"><i class="fa fa-map-marker"></i>BÍO-BÍO (CHILE)</span>
+											<span class="bed">3</span>
+											<span class="bath">2</span>
+											<span class="garage">2</span>
+											<span class="gym">1</span>
+										</div>
+										<div class="right">
+											<span class="area">134 m2</span>
+											<span class="price">$ 34870000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6">
+								<div class="item">
+									<div class="item-header clearfix">
+										<h3><a href="#">CASA EN LOS ANGELES</a></h3>
+										<span class="favorite"><i class="fa fa-heart"></i>5</span>
+									</div>
+									<figure>
+										<img src="images/items/2.png" alt="" class="img-responsive">
+										<span class="label sale">VENTA</span>
+										<div class="overlay">
+											<a href="#" class="btn btn-detail">DETALLES</a>
+										</div>
+									</figure>
+									<div class="item-detail">
+										<div class="left">
+											<span class="place"><i class="fa fa-map-marker"></i>BÍO-BÍO (CHILE)</span>
+											<span class="bed">3</span>
+											<span class="bath">2</span>
+											<span class="garage">2</span>
+											<span class="gym">1</span>
+										</div>
+										<div class="right">
+											<span class="area">134 m2</span>
+											<span class="price">$ 45870000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6">
+								<div class="item">
+									<div class="item-header clearfix">
+										<h3><a href="#">CASA EN LOS ANGELES</a></h3>
+										<span class="favorite"><i class="fa fa-heart"></i>12</span>
+									</div>
+									<figure>
+										<img src="images/items/3.png" alt="" class="img-responsive">
+										<span class="label sale">VENTA</span>
+										<div class="overlay">
+											<a href="#" class="btn btn-detail">DETALLES</a>
+										</div>
+									</figure>
+									<div class="item-detail">
+										<div class="left">
+											<span class="place"><i class="fa fa-map-marker"></i>BÍO-BÍO (CHILE)</span>
+											<span class="bed">3</span>
+											<span class="bath">2</span>
+											<span class="garage">2</span>
+											<span class="gym">1</span>
+										</div>
+										<div class="right">
+											<span class="area">134 m2</span>
+											<span class="price">$ 67870000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6">
+								<div class="item">
+									<div class="item-header clearfix">
+										<h3><a href="#">CASA EN LOS ANGELES</a></h3>
+										<span class="favorite"><i class="fa fa-heart"></i>5</span>
+									</div>
+									<figure>
+										<img src="images/items/4.png" alt="" class="img-responsive">
+										<span class="label sale">VENTA</span>
+										<div class="overlay">
+											<a href="#" class="btn btn-detail">DETALLES</a>
+										</div>
+									</figure>
+									<div class="item-detail">
+										<div class="left">
+											<span class="place"><i class="fa fa-map-marker"></i>BÍO-BÍO (CHILE)</span>
+											<span class="bed">3</span>
+											<span class="bath">2</span>
+											<span class="garage">2</span>
+											<span class="gym">1</span>
+										</div>
+										<div class="right">
+											<span class="area">134 m2</span>
+											<span class="price">$ 54870000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6">
+								<div class="item">
+									<div class="item-header clearfix">
+										<h3><a href="#">CASA EN LOS ANGELES</a></h3>
+										<span class="favorite"><i class="fa fa-heart"></i>9</span>
+									</div>
+									<figure>
+										<img src="images/items/5.png" alt="" class="img-responsive">
+										<span class="label sale">VENTA</span>
+										<div class="overlay">
+											<a href="#" class="btn btn-detail">DETALLES</a>
+										</div>
+									</figure>
+									<div class="item-detail">
+										<div class="left">
+											<span class="place"><i class="fa fa-map-marker"></i>BÍO-BÍO (CHILE)</span>
+											<span class="bed">3</span>
+											<span class="bath">2</span>
+											<span class="garage">2</span>
+											<span class="gym">1</span>
+										</div>
+										<div class="right">
+											<span class="area">134 m2</span>
+											<span class="price">$ 45870000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6">
+								<div class="item">
+									<div class="item-header clearfix">
+										<h3><a href="#">CASA EN LOS ANGELES</a></h3>
+										<span class="favorite"><i class="fa fa-heart"></i>9</span>
+									</div>
+									<figure>
+										<img src="images/items/6.png" alt="" class="img-responsive">
+										<span class="label sale">VENTA</span>
+										<div class="overlay">
+											<a href="#" class="btn btn-detail">DETALLES</a>
+										</div>
+									</figure>
+									<div class="item-detail">
+										<div class="left">
+											<span class="place"><i class="fa fa-map-marker"></i>BÍO-BÍO (CHILE)</span>
+											<span class="bed">3</span>
+											<span class="bath">2</span>
+											<span class="garage">2</span>
+											<span class="gym">1</span>
+										</div>
+										<div class="right">
+											<span class="area">134 m2</span>
+											<span class="price">$ 34870000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6">
+								<div class="item">
+									<div class="item-header clearfix">
+										<h3><a href="#">CASA EN LOS ANGELES</a></h3>
+										<span class="favorite"><i class="fa fa-heart"></i>9</span>
+									</div>
+									<figure>
+										<img src="images/items/7.png" alt="" class="img-responsive">
+										<span class="label sale">VENTA</span>
+										<div class="overlay">
+											<a href="#" class="btn btn-detail">DETALLES</a>
+										</div>
+									</figure>
+									<div class="item-detail">
+										<div class="left">
+											<span class="place"><i class="fa fa-map-marker"></i>BÍO-BÍO (CHILE)</span>
+											<span class="bed">3</span>
+											<span class="bath">2</span>
+											<span class="garage">2</span>
+											<span class="gym">1</span>
+										</div>
+										<div class="right">
+											<span class="area">134 m2</span>
+											<span class="price">$ 34870000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6">
+								<div class="item">
+									<div class="item-header clearfix">
+										<h3><a href="#">CASA EN LOS ANGELES</a></h3>
+										<span class="favorite"><i class="fa fa-heart"></i>9</span>
+									</div>
+									<figure>
+										<img src="images/items/8.png" alt="" class="img-responsive">
+										<span class="label sale">VENTA</span>
+										<div class="overlay">
+											<a href="#" class="btn btn-detail">DETALLES</a>
+										</div>
+									</figure>
+									<div class="item-detail">
+										<div class="left">
+											<span class="place"><i class="fa fa-map-marker"></i>BÍO-BÍO (CHILE)</span>
+											<span class="bed">3</span>
+											<span class="bath">2</span>
+											<span class="garage">2</span>
+											<span class="gym">1</span>
+										</div>
+										<div class="right">
+											<span class="area">134 m2</span>
+											<span class="price">$ 56870000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!-- PAGINATION -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="pagination">
+							<a href="#" class="prev"><i class="fa fa-angle-left"></i>PREVIO</a>
+							<a href="#">1</a>
+							<span>2</span>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#">6</a>
+							<a href="#" class="next">PROXIMO<i class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- PAGINATION -->
+
+		</div>
+
+		<!-- CALL2ACTION -->
+		<div class="full-width call-action">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h4>¿quieres vender o alquilar tu propiedad? ¡contáctanos!</h4>
+					</div>
+					<div class="col-md-3">
+						<a href="contact.html" class="btn btn-danger">SUMINISTRE INFORMACION</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- CALL2ACTION -->
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 copy-right">
+						<p> &copy; 2020 MY — OPORTUNIDAD INMOBILIARIA</p>
+					</div>
+					<div class="col-md-7">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">PROPIEDADES</a></li>
+							<li><a href="#">SERVICIOS</a></li>
+							<li><a href="#">NOSOTROS</a></li>
+							<li><a href="#">CONTACTOS</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER -->
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+		<script src="js/jquery.selectBox.min.js"></script>
+		<script src="js/icheck.js"></script>
+		<script src="js/counter.animation.js"></script>
+		<script src="js/jquery.appear.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/jquery.cycle2.js"></script>
+
+	</body>
+</html>
